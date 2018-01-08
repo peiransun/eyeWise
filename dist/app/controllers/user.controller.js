@@ -103,10 +103,10 @@ let UserController = class UserController {
         });
     }
     /**
-    * 刪除全部
-    * @param req
-    * @param res
-    */
+     * 刪除全部
+     * @param req
+     * @param res
+     */
     remove(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
@@ -120,43 +120,43 @@ let UserController = class UserController {
     }
 };
 __decorate([
-    express_1.Get('/'),
+    express_1.Get("/"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "find", null);
 __decorate([
-    express_1.Get('/:id'),
+    express_1.Get("/:id"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "findById", null);
 __decorate([
-    express_1.Post('/'),
+    express_1.Post("/"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "add", null);
 __decorate([
-    express_1.Put('/:id'),
+    express_1.Put("/:id"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "modifyById", null);
 __decorate([
-    express_1.Delete('/:id'),
+    express_1.Delete("/:id"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "removeById", null);
 __decorate([
-    express_1.Delete('/'),
+    express_1.Delete("/"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "remove", null);
 UserController = __decorate([
-    express_1.Controller('/webapi/user'),
+    express_1.Controller("/webapi/user"),
     __metadata("design:paramtypes", [])
 ], UserController);
 exports.UserController = UserController;

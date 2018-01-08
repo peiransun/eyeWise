@@ -11,12 +11,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class SampleModel {
     constructor() { }
     /**
-       * 取得院區
-       * @return {Promise<Array<Branch>>}
-       */
+     * 取得院區
+     * @return {Promise<Array<Branch>>}
+     */
     getBranches() {
         return __awaiter(this, void 0, void 0, function* () {
-            return '孫培然工作室';
+            return "孫培然工作室";
         });
     }
     /**

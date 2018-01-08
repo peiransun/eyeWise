@@ -23,8 +23,7 @@ const sample_model_1 = require("../model/sample.model");
  * Sample Controller
  */
 let SampleController = class SampleController {
-    constructor() {
-    }
+    constructor() { }
     get sampleModel() {
         if (!this._sampleModel) {
             this._sampleModel = new sample_model_1.SampleModel();
@@ -60,7 +59,7 @@ let SampleController = class SampleController {
      */
     setEmpName(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log('rrrrrrrrrrrrrrrrrrrrrrrrr');
+            console.log("rrrrrrrrrrrrrrrrrrrrrrrrr");
             try {
                 let data = yield this.sampleModel.setEmpName(req.body);
                 res.json(data);
@@ -72,19 +71,19 @@ let SampleController = class SampleController {
     }
 };
 __decorate([
-    express_1.Get('/getBranches'),
+    express_1.Get("/getBranches"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], SampleController.prototype, "getBranches", null);
 __decorate([
-    express_1.Put('/setEmpName'),
+    express_1.Put("/setEmpName"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], SampleController.prototype, "setEmpName", null);
 SampleController = __decorate([
-    express_1.Controller('/webapi/sample'),
+    express_1.Controller("/webapi/sample"),
     __metadata("design:paramtypes", [])
 ], SampleController);
 exports.SampleController = SampleController;

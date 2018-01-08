@@ -1,9 +1,6 @@
-import { Schema, model } from "mongoose";
-import { IUser } from "../viewmodel";
-
-const UserSchema = new Schema({
-  name: { type: String },
-  email: { type: String }
-});
+import { model } from "mongoose";
+import { UserSchema } from "../schema";
+import { IUser } from "../interface";
 
 export const User = model<IUser>("User", UserSchema);
+
