@@ -33,7 +33,7 @@ export class Server {
   }
 
   private connectDatabase() {
-    mongoose.connect('mongodb://localhost/eyeWise', {});
+    mongoose.connect("mongodb://localhost/eyeWise", {});
     mongoose.Promise = global.Promise;
   }
   /**
